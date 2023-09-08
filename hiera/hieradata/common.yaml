@@ -44,9 +44,9 @@ ssh_keys:
   # * The comment is `jenkins-agent@my-buildfarm`.
   #
   # Use the comment as the key name
-  'jenkins-agent@my-buildfarm':
-      type: REPLACE_WITH_AGENT_SSH_KEY_TYPE
-      key: REPLACE_WITH_AGENT_SSH_KEY
+  'jenkins@my-buildfarm':
+      type: ssh-rsa
+      key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDcxlez7Z/v5UdXdHmKeIM5fCZb8u7Ogz8cJDScysTzuCpwQSE3LVn5Ipo28nxAxtEoBRIy4p3noRVEDq9EG6bdk2ddNxH8F79NyMBCViOu8Nk43/ryLn/WLI7xgGNZKovJ/IMm/fvvs1aZtb4MMfLE8/xYioNtYPie9AKLoCVG4+LIgNBth1BKUgbsgXEL47sfQcFy4KgU7qNEKmsTQ5Dwr7l8q3gaAdZ8VoHUJXlNL+nte3SlAd2dJ0tze/kbt37wuJm4RGAmGom+BlAZZgjDPksjyATq4w8NXiJROFtaqtCskdjDzpH3BpywFH4xs95oTCxApeAYzW5OsaDALSbP
       user: jenkins-agent
       require: User[jenkins-agent]
     ## If you wish to add keys for administrative access you can do so as well.
